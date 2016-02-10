@@ -1,0 +1,20 @@
+{% load crispy_forms_tags %}
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+{% block content %}
+
+          <h1>Assign Work</h1>
+          <form method="POST" class="post-form">{% csrf_token %}
+            {{form.as_p}}
+              <button type="submit" class="save btn btn-default">Save</button>
+          </form>
+      {% endblock %}
+
+    </head>
+    <body>
+</html>
