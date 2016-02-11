@@ -128,4 +128,7 @@ APP_DIRS =True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+PROJECT_ROOT = os.path.join(os.path.dirname(__file__), '..')
+SITE_ROOT = PROJECT_ROOT
+STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+STATIC_URL = os.path.join(SITE_ROOT,'/static/')
