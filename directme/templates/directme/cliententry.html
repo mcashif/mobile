@@ -135,7 +135,7 @@ function initialize() {
 {% block content %}
           <h1>Client Data</h1>
           <form method="POST" class="post-form">{% csrf_token %}
-            {% crispy form %}
+            {{ form.as_p }}
               Address*<br><input type="text" id="add" name="add" /><br>
               Latitude*<br><input type="text" id="lat" name="elat"/><br>
               Longitude*<br><input type="text" id="lng" name="elng" /><br>

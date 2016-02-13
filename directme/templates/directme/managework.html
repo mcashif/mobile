@@ -53,7 +53,7 @@
 {% block content %}
           <h1>Assign Work</h1>
           <form method="POST" class="post-form">{% csrf_token %}
-                {% crispy form %}
+                {{ form.as_p }}
               <button type="submit" class="save btn btn-default">Save</button>
           </form>
       {% endblock %}

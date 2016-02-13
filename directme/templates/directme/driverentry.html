@@ -54,8 +54,8 @@
 
           <h1>Driver Data</h1>
           <form method="POST" class="post-form">{% csrf_token %}
-            {% crispy form %}
-              <button type="submit" class="save btn btn-default">Save</button>
+            {{ form.as_p }}
+              <button type="submit" class="button">Save</button>
           </form>
       {% endblock %}
     </div>
