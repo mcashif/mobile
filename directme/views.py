@@ -44,3 +44,8 @@ def manage_driver(request):
     else:
         form = DriverForm()
         return render(request, 'directme/driverentry.html', {'form': form})
+
+
+def draw_tree(request):
+
+        return render(request, 'directme/test.html')
